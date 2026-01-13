@@ -8,8 +8,6 @@ scores = [
     [100, 100, 99, 95, 96]
 ]
 
-
-print("Scoresheet of 7 students in 5 subjects:")
-temp = enumerate(scores, start=1)
-for i, student in temp:
-    print(f"Student {i}: Math  2 ={student[0]} Math 3 ={student[1]} Chemistry ={student[2]} Biology ={student[3]} Adtech ={student[4]} ")
+"I have learned that multi-dimensional array is very useful. 
+"It helps me in my JSON file and other data sheets. 
+"Although it is hard, the multidimeansional array is very useful to file up datas."

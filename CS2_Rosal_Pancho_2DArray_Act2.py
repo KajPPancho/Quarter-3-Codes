@@ -29,7 +29,7 @@ all_scores = [score for student in scores for score in student]
 print("Overall Maximum Score in Dataset:", max(all_scores))
 print("Overall Minimum Score in Dataset:", min(all_scores))
 
-"Using a 2D array made it easier to organize the scores by student and subject, so I could loop through each row systematically. 
+"As of using a 2D array, it made things easy to organize the scores by student and subject, so I could loop through each row systematically. 
 "Summarizing totals and averages was straightforward because Python’s built-in functions like sum(), max(), and min() handle the calculations efficiently.
-"The easiest part was computing averages since it only required dividing the total by the number of subjects. 
-"The slightly tricky part was finding the overall maximum and minimum values, which required flattening the dataset into a single list.
+"The simplest part was computing averages because it only requires division of the total by the number of subjects. 
+"The tricky part for me was searching the final maximum and minimum values, which required flattening the dataset into a single list.

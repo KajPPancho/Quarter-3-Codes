@@ -7,29 +7,29 @@ scores = [
     [100, 100, 99, 95, 96]
 ]
 
-
-print("Scoresheet of 7 students in 5 subjects:")
-temp = enumerate(scores, start=1)
-for i, student in temp:
-    print(f"Student {i}: Math  2 ={student[0]} Math 3 ={student[1]} Chemistry ={student[2]} Biology ={student[3]} Adtech ={student[4]} ")
-
-print()
-print("Maximum score of each student:")
-temp2 = enumerate(scores, start=1)
-for x, student in temp2:
-    l = x
-    max_score = max(student)
-    print(f"Student {l} : " ,max_score)
-print()
-print("Average Scores of each stuent:")
+print("Scoresheet of 6 students in 5 subjects:")
 for i, student in enumerate(scores, start=1):
-    avg = sum(student) / len(student)
-    print(f"Student {i} Average:" ,avg)
+    print(f"Student {i}: {student}")
 
-print()
-print("Minimum score of each student:")
-temp3 = enumerate(scores, start=1)
-for a, student in temp3:
-    b = a
-    min_score = min(student)
-    print(f"Student {a} : " ,min_score)
+print("\nTotal and Average per Student:")
+for i, student in enumerate(scores, start=1):
+    total = sum(student)
+    avg = total / len(student)
+    print(f"Student {i} → Total: {total}, Average: {avg:.2f}")
+
+print("\nMaximum score of each student:")
+for i, student in enumerate(scores, start=1):
+    print(f"Student {i}: {max(student)}")
+
+print("\nMinimum score of each student:")
+for i, student in enumerate(scores, start=1):
+    print(f"Student {i}: {min(student)}")
+
+all_scores = [score for student in scores for score in student]
+print("Overall Maximum Score in Dataset:", max(all_scores))
+print("Overall Minimum Score in Dataset:", min(all_scores))
+
+"Using a 2D array made it easier to organize the scores by student and subject, so I could loop through each row systematically. 
+"Summarizing totals and averages was straightforward because Python’s built-in functions like sum(), max(), and min() handle the calculations efficiently.
+"The easiest part was computing averages since it only required dividing the total by the number of subjects. 
+"The slightly tricky part was finding the overall maximum and minimum values, which required flattening the dataset into a single list.

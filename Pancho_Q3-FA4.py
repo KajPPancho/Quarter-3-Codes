@@ -22,5 +22,5 @@ highest_total = max(totals)
 highest_person = names[totals.index(highest_total)]
 
 
-print("\nOverall Results:")
+print("Overall Results:")
 print(f"Highest Total Steps: {highest_person} with {highest_total}")
